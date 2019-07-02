@@ -1,0 +1,11 @@
+{
+  "name": "wsbash-h5-client",
+  "version": "0.1.0",
+  "description": "A C/S data exchange tool library that based on WebSocket.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "langyo",
+  "license": "Apache-2.0"
+}
