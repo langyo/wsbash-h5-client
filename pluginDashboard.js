@@ -53,7 +53,7 @@ export default class PluginDashboard {
   }
 
   _sendMessage(args) {
-    console.log("Client ill send:", args);
+    console.log("Client will send:", args);
     let cmd = args.reduce((prev, next) => prev + ' ' + next);
     let type = /^(execute|data).*$/.exec(cmd)[1];
 
@@ -69,11 +69,14 @@ export default class PluginDashboard {
 
   _receiveMessagePre = (str) => {
     console.log("Get the message from the server：", str);
+    
+    // Heart package check.
     if (str[0] == '@') return;
+
     this.buffer += str + '\n';
     let cmds = this.buffer.split('\n');
     this.buffer = cmds.pop();
-    console.log("[ BUFFER ]:", this.buffer);
+    console.log("[ BUFFER ]", this.buffer);
     console.log("Start running the command:", cmds);
     cmds.forEach(n => this._receiveMessage(n));
   }
@@ -96,9 +99,9 @@ export default class PluginDashboard {
       this._sendMessage(['data', 'system', 'fail']);
     }
     try {
-      // 开始根据解析出的参数列表调用对应的函数
+      // Get the function.
       let ret = func[arg].apply(new ExecuterContext(cmds, this), args);
-      // 如果对方为 execute，则说明是在请求数据，当 ret 非空时自动给对方一个反馈
+      // If the head is 'execute', it needs a call back 'data' command.
       if (type == 'execute' && ret != null) this._sendMessage(['data'].concat(cmds).concat(ret.trim().split(' ')));
     } catch (e) {
       console.log(e);
