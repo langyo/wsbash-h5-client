@@ -2,10 +2,41 @@
   "name": "wsbash-h5-client",
   "version": "0.1.0",
   "description": "A C/S data exchange tool library that based on WebSocket.",
-  "main": "index.js",
+  "main": "export.bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "watchify export.js -t babelify -o export.bundle.js --release --verbose",
+    "build": "browserify export.js -o export.bundle.js -t babelify -d",
+    "test": "jest --watch"
   },
   "author": "langyo",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.3.0",
+    "otfunc": "^0.1.1",
+    "watchify": "^3.11.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "modules": "commonjs",
+          "targets": {
+            "node": "current",
+            "chrome": "53",
+            "ie": "11"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-class-properties"
+      ]
+    ]
+  }
 }

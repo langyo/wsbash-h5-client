@@ -1,4 +1,4 @@
-import { send, register, receive, connectionEvents } from "./socketMessageManager/webSocketClient";
+import { send, register, receive, connectionEvents } from "./webSocketClient";
 
 connectionEvents.on("load", () => {
   receive({
