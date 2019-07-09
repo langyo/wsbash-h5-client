@@ -10,7 +10,8 @@
 
 | 语言 | 类型 | 仓库位置 |
 | :-: | :-: | :-: |
-| JavaScript(HTML5) | 客户端 | [wsbash-h5-client](https://github.com/mcbbs-developer/wsbash-h5-client) |
+| JavaScript(Node.js) | 服务端 | [wsbash-node-server](https://github.com/mcbbs-developer/wsbash-node-server) |
+| Java | 客户端 | [wsbash-java-client](https://github.com/mcbbs-developer/wsbash-java-client) |
 
 ## 概念
 

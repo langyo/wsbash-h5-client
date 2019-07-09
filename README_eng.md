@@ -12,7 +12,8 @@ Another libraries：
 
 | Language | Type | Location |
 | :-: | :-: | :-: |
-| JavaScript(HTML5) | Client | [wsbash-h5-client](https://github.com/mcbbs-developer/wsbash-h5-client) |
+| JavaScript(Node.js) | Server | [wsbash-node-server](https://github.com/mcbbs-developer/wsbash-node-server) |
+| Java | Client | [wsbash-java-client](https://github.com/mcbbs-developer/wsbash-java-client) |
 
 ## concept
 
