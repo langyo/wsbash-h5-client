@@ -1,7 +1,7 @@
 const diff = (from, to) => {
   for (let i of Object.keys(from)) {
-    if (to[i] == undefined || typeof from[i] != 'object' && from[i] != to[i]) to[i] = from[i];
-    else if (typeof from[i] != 'function') throw new Error("It must to be a function.");
+    if (to[i] === undefined || typeof from[i] !== 'object' && from[i] !== to[i]) to[i] = from[i];
+    else if (typeof from[i] !== 'function') throw new Error("It must to be a function.");
     else to[i] = diff(from[i], to[i]);
   }
   return to;
