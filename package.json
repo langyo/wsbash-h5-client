@@ -1,6 +1,6 @@
 {
   "name": "wsbash-h5-client",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A C/S data exchange tool library that based on WebSocket.",
   "main": "./src/socketClient.js",
   "scripts": {
