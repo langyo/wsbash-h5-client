@@ -10,8 +10,9 @@
 
 | 语言 | 类型 | 仓库位置 |
 | :-: | :-: | :-: |
-| JavaScript(Node.js) | 服务端 | [wsbash-node-server](https://github.com/mcbbs-developer/wsbash-node-server) |
-| Java | 客户端 | [wsbash-java-client](https://github.com/mcbbs-developer/wsbash-java-client) |
+| JavaScript(Node.js) | 客户端 | [wsbash-node-client](https://github.com/langyo/wsbash-node-client) |
+| JavaScript(Node.js) | 服务端 | [wsbash-node-server](https://github.com/langyo/wsbash-node-server) |
+| Java | 客户端 | [wsbash-java-client](https://github.com/langyo/wsbash-java-client) |
 
 ## 概念
 

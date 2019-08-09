@@ -12,8 +12,9 @@ Another libraries：
 
 | Language | Type | Location |
 | :-: | :-: | :-: |
-| JavaScript(Node.js) | Server | [wsbash-node-server](https://github.com/mcbbs-developer/wsbash-node-server) |
-| Java | Client | [wsbash-java-client](https://github.com/mcbbs-developer/wsbash-java-client) |
+| JavaScript(Node.js) | Client | [wsbash-node-client](https://github.com/langyo/wsbash-node-client) |
+| JavaScript(Node.js) | Server | [wsbash-node-server](https://github.com/langyo/wsbash-node-server) |
+| Java | Client | [wsbash-java-client](https://github.com/langyo/wsbash-java-client) |
 
 ## concept
 
